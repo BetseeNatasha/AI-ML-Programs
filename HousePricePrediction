@@ -1,0 +1,15 @@
+package aiml;
+
+import java.util.Scanner;
+
+public class HousePricePrediction {
+
+	public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter the size of the house in square feet: ");
+       int size=sc.nextInt();
+       double price=50+0.05*size;
+       System.out.println(price+" Lakhs");
+	}
+
+}
