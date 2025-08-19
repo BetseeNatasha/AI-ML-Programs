@@ -1,0 +1,17 @@
+package aiml;
+import java.util.Scanner;
+public class WeatherPrediction {
+	public static void main(String[] args) {
+       Scanner sc=new Scanner (System.in);
+       System.out.print("Enter temperature :");
+       int temp=sc.nextInt();
+       System.out.print("Enter humidity :");
+       int humidity=sc.nextInt();
+       if(temp<25&&humidity>70) {
+    	   System.out.println("Rainy");
+       }
+       else
+    	   System.out.println("Sunny");
+	}
+
+}
