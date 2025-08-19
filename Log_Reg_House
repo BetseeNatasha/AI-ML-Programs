@@ -1,0 +1,19 @@
+package aiml;
+import java.util.Scanner;
+public class LogisticRegression {
+	public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter temperature :");
+      int temp = sc.nextInt();
+      System.out.print("Enter humidity :");
+      int humidity = sc.nextInt();
+      double score=-0.3*temp + 0.5*humidity - 10;
+      double signoid= 1/(1+Math.exp(-score));
+      if(signoid>0.5) {
+		  System.out.println(signoid+"-->Rainy");
+	  } else {
+		  System.out.println(signoid+"-->Sunny");
+	  }
+	}
+
+}
